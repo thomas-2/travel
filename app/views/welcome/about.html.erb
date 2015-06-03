@@ -1,0 +1,26 @@
+<h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<style>
+  body {
+      background: <%= @blue %>;
+  }
+</style>
+<%= link_to "Yellow", {controller: "welcome", action: "about", color: "#F7FE2E"}, class: "btn btn-success" %>
+<%= link_to "Green", {controller: "welcome", action: "about", color: "#64FE2E"}, class: "btn btn-warning" %>
+<h1>About Me</h1>
+<p>Lots of Interesting Things</p>
+<p>My favorite color is <%= @color %></p>
+<% if @size > 12 %>
+  <p>My shoe size is <%= @size %>. I have HUGE feet.</p>
+<% else %>
+  <p>My shoe size is <%= @size %></p>
+
+
+<% end %>
+
+
+
+
+
+
+
